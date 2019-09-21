@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulários</title>
+</head>
+<body>
+	<form action="http://www.google.com/search" name="f" method="get">
+		<fieldset><legend>O que você deseja pesquisar:</legend>
+			<label for="palavras"> Palavras que deseja pesquisar:</label>
+			<input type="text" name="as_oq" id="palavras" size="40">
+
+			<h3>ou</h3>
+
+			<label for="exp">Expressão exata:</label> <br/>
+			<textarea name="as_epq" rows="4" cols="55" id="exp"></textarea>
+		</fieldset><br/>
+
+		<fieldset><legend>Opções</legend>
+			<label for="opc">Idioma</label>
+			<select name="lr" size="1" id="opc">
+				<option value="lang_pt">Português</option>
+				<option value="lang_en">Inglês</option>
+				<option value="lang_es">Espanhol</option>
+			</select>
+		</fieldset>
+
+		<input type="reset" name="limpar" value="Limpar"/>
+		<input type="submit" name="pesquisar" value="Pesquisar">
+	</form>
+</body>
+</html>
